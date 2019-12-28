@@ -1,0 +1,131 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    font-family: PingFangSC-Light,-apple-system,PingFang SC,Helvetica Neue,Helvetica,Microsoft YaHei,Arial,sans-serif;;
+}
+/* 网页头 */
+header{
+    width: 100%;
+    height: 50px;
+    background: #000;
+    line-height: 50px;
+}
+.headerContent{
+    width: 1040px;
+    margin: 0 auto;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.headerContent>li{
+    padding-left: 30px;
+}
+.headerContent>li>a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: PingFangSC-Light,-apple-system,PingFang SC,Helvetica Neue,Helvetica,Microsoft YaHei,Arial,sans-serif;
+}
+.headerContent>li>a:hover{
+    color: #aaa;
+}
+.headerContent>li>input{
+    width: 50px;
+    height: 16px;
+    background-color: #000;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    font-size: 10px;
+    color: #fff;
+    text-indent: 4px;
+}
+.profilePhoto{
+    height: 37px;
+    width: 37px;
+    /* background-color: lightblue; */
+    margin-top: 6px;
+}
+/* 内容顶部 */
+.homeTop{
+    position: relative;
+    width: 1040px;
+    height: 470px;
+    margin: 25px auto 25px;
+    /* background-color: rgba(0, 255, 255, 0.253); */
+    display: flex;
+    justify-content: space-between;
+}
+.topLeft{
+    width: 214px;
+    height: 470px;
+    /* background-color: rgba(34, 139, 34, 0.377); */
+    position: relative;
+}
+.topRight{
+    width: 815px;
+    height: 470px;
+    background-color: darkgoldenrod;
+}
+/* 顶部 1.1 */
+.homeLogo{
+    padding: 17px 25px 47px;
+}
+.homeLogo>img{
+    width: 160px;
+}
+/* 顶部 1.2 */
+.leftList{
+    box-sizing: border-box;
+    padding: 10px;
+}
+.leftList>div{
+    clear: both;
+    height: 20px;
+    line-height: 20px;
+}
+.leftList>div>a{
+    text-decoration: none;
+    color: #191919;
+    font-size: 14px;
+}
+/* .viewStore{
+    margin: 0 auto;
+} */
+.leftList>div>ul{
+    list-style: none;
+    display: block;
+}
+.leftList>div>ul>li{
+    float: left;
+}
+.leftList>div>ul>li>a{
+    text-decoration: none;
+    padding-right: 5px;
+    color: #a4b4d1;
+}
+.leftList>div>ul>li>a:hover{
+    color: #009bff;
+}
+
+
+
+
+
+
+
+
+.viewStore>a{
+    color: #191919;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3px 0;
+    position: absolute;
+    bottom: 5px;
+    text-decoration: none;
+    text-align: center;
+}
