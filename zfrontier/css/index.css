@@ -61,7 +61,7 @@ header{
     justify-content: space-between;
 }
 .topLeft{
-    width: 214px;
+    width: 20%;
     height: 470px;
     /* background-color: rgba(34, 139, 34, 0.377); */
     position: relative;
@@ -71,14 +71,14 @@ header{
     height: 470px;
     background-color: darkgoldenrod;
 }
-/* 顶部 1.1 */
+/* 顶部 左边 logo */
 .homeLogo{
     padding: 17px 25px 47px;
 }
 .homeLogo>img{
     width: 160px;
 }
-/* 顶部 1.2 */
+/* 顶部 左边列表 */
 .leftList{
     box-sizing: border-box;
     padding: 10px;
@@ -111,14 +111,12 @@ header{
 .leftList>div>ul>li>a:hover{
     color: #009bff;
 }
-
-
-
-
-
-
-
-
+/* 每项的开头元素加粗 */
+.leftList>div>ul>li:first-child,
+.leftList>div>ul>br+li{
+    font-weight: 600;
+}
+/* 查看装备商店 */
 .viewStore>a{
     color: #191919;
     width: 100%;
@@ -128,4 +126,30 @@ header{
     bottom: 5px;
     text-decoration: none;
     text-align: center;
+}
+/* 顶部 右边 */
+.topRight{
+    width: 80%;
+    height: 470px;
+}
+/* 顶部 右边 左边 */
+.topRightLeft{
+    width: 80%;
+    height: 470px;
+    background-color: pink;
+}
+/* 顶部 右边 右边 */
+.topRightRight{
+    width: 20%;
+    height: 470px;
+
+}
+/* 定位使用position */
+/* 绝对定位父元素  relative */
+.topRightLeft,.topRightRight{
+    position: relative;
+}
+/* 定位子元素 absolute */
+.topRightLeft>div,.topRightRight>div{
+    position: absolute;
 }
