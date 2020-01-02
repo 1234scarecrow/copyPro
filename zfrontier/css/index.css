@@ -110,7 +110,7 @@ header{
     display: block;
 }
 .open>ul{
-    height: 100px !important;
+    height: 90px !important;
 }
 /************************/
 
@@ -123,7 +123,7 @@ header{
     color: #a4b4d1;
 }
 .leftList>div>ul>li>a:hover{
-    color: #009bff;
+    color: #2eacff;
 }
 /* 每项的开头元素加粗 */
 .leftList>div>ul>li:first-child,
@@ -132,7 +132,7 @@ header{
 }
 /* 查看装备商店 */
 .viewStore>a{
-    color: #191919;
+    color: #a4b4d1;
     width: 100%;
     margin: 0 auto;
     padding: 3px 0;
@@ -140,6 +140,9 @@ header{
     bottom: 5px;
     text-decoration: none;
     text-align: center;
+}
+.viewStore>a:hover{
+    color: #2eacff;
 }
 /* 顶部 右边 */
 .topRight{
