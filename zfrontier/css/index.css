@@ -85,7 +85,7 @@ header{
 }
 .leftList>div{
     clear: both;
-    height: 20px;
+    /* height: 20px; */
     line-height: 20px;
 }
 .leftList>div>a{
@@ -99,7 +99,21 @@ header{
 .leftList>div>ul{
     list-style: none;
     display: block;
+    /* 隐藏时的样式 */
+    height: 0px;
+    overflow: hidden;
+    transition: height .5s ease;
 }
+/************************/
+/* 左边列表动作相关 */
+.open{
+    display: block;
+}
+.open>ul{
+    height: 100px !important;
+}
+/************************/
+
 .leftList>div>ul>li{
     float: left;
 }
