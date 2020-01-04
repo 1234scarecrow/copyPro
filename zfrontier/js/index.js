@@ -20,3 +20,32 @@ for(var elediv of eledivs){
 
     }
 }
+
+// 动作: 鼠标悬停于顶部右侧部分(tdiv)时，小程序二维码显示
+var tdiv=document.getElementsByClassName("topRight")[0];
+var qrCode=document.getElementsByClassName("qrCode")[0];
+tdiv.onmouseover=function(){
+    qrCode.className="play";
+}
+tdiv.onmouseout=function(){
+    qrCode.className="hidden";
+}
+
+// 动作: 主页轮播图 JS简易版
+// 获取轮播图的ul
+var carousel=document.getElementById("indexCarousel");
+var i=0;
+function moveTo(to){
+    if(to==undefined){
+        to=i+1;
+    }
+    i=to;
+    if(i>2){            // 此处的3是轮播图的长度, 可用查询出来的li数组长度代替
+        i=0;
+    }
+    carousel.style.marginLeft=-i*460+"px";
+}
+// 设置定时器，自动轮播
+var timer=setInterval(function(){
+    moveTo();
+},2500)

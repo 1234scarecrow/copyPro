@@ -229,6 +229,11 @@ header{
     color: #fff;
     font-weight: bold;
 }
+.topRightLeft>div>a{
+    text-decoration: none;
+    color: #000;
+    margin-right: 8px;
+}
 .topRightLeft>div:nth-child(2){
     display: block;
     padding-top: 13px;
@@ -301,4 +306,28 @@ header{
     position: absolute;
     top: 0px;
     right: 15px;
+    /* opacity: 1; */
+    transition: opacity 0.2s ease;
+}
+/* 控制二维码显示与隐藏 */
+.play{
+    opacity: 1;
+}
+.hidden{
+    opacity: 0;
+}
+
+/* 主页轮播图样式 */
+.topmain1>div:first-child{
+    width: 460px;
+    overflow: hidden;
+}
+.indexCarousel{
+    list-style: none;
+    width: 1380px;
+    margin-left: 0px;
+    transition: margin-left 0.25s ease;
+}
+.indexCarousel>li{
+    float: left;
 }
