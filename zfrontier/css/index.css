@@ -70,7 +70,7 @@ header{
 .topRight{
     width: 815px;
     height: 470px;
-    background-color: rgba(184, 135, 11, 0.151);
+    /* background-color: rgba(184, 135, 11, 0.151); */
 }
 /* 顶部 左边 logo */
 .homeLogo{
@@ -175,7 +175,7 @@ header{
 .topRightLeft{
     width: 80%;
     height: 470px;
-    background-color: rgba(255, 192, 203, 0.199);
+    /* background-color: rgba(255, 192, 203, 0.199); */
 }
 /* 顶部 右边 右边 */
 .topRightRight{
@@ -220,6 +220,7 @@ header{
     height: 25px;
     border: none;
     background-color: transparent;
+    outline: none;
 }
 .topRightLeft>div>button{
     margin-left: 10px;
@@ -258,7 +259,7 @@ header{
 .topRightLeft>.topmain1>div:nth-child(1){
     width: 460px;
     height: 370px;
-    background-color: rgb(201, 141, 141);
+    /* background-color: rgb(201, 141, 141); */
     position: absolute;
     top: 0;
     left: 0;
@@ -330,4 +331,100 @@ header{
 }
 .indexCarousel>li{
     float: left;
+}
+
+/* 主页顶部文字部分 */
+/* 轮播图相关 */
+.indexCarousel>li{
+    position: relative;
+}
+.indexCarousel>li>div{
+    padding: 5px 10px;
+    background: #00000030;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    color: #fff;
+}
+.indexCarousel>li:first-child>div>span{
+    color: #bbb;
+}
+.indexCarousel>li:nth-child(2)>div>span{
+    color: #e4e4e4;
+}
+.indexCarousel>li:nth-child(2)>div>.price{
+    color: #fff;
+}
+.indexCarousel>li:nth-child(3)>div>span{
+    color: #e4e4e4;
+}
+.indexCarousel>li:nth-child(3)>div>.price{
+    color: #fff;
+}
+/* 项目s相关 */
+.items1,.items2{
+    position: relative;
+    margin-top: 0px;
+    transition: margin-top 0.2s ease
+}
+/* .items1:hover{
+    margin-top: -3px;
+}
+.items2:hover{
+    margin-top: -3px;
+} */
+.items1>div{
+    height: 220px;
+    width: 188px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+}
+.items1>div:nth-child(2)>h3{
+    margin-left: 5px;
+    display: block;
+    position: absolute;
+    top: 88%;
+    color: #fff;
+}
+.items1>div:nth-child(3){
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    background-color: #00000033;
+    color: #fff;
+    padding: 5px;
+    padding-top: 66%;
+}
+.items1>div:nth-child(3)>span{
+    color: #e4e4e4;
+}
+.items2>div{
+    width: 188px;
+    height: 142px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+}
+.items2>div:nth-child(2)>h3{
+    margin-left: 5px;
+    display: block;
+    position: absolute;
+    top: 81%;
+    color: #fff;
+}
+.items2>div:nth-child(3){
+    background-color: #00000033;
+    color: #fff;
+    padding: 5px;
+    padding-top: 24%;
+}
+/* 中间两小项目动作样式 */
+.block{
+    display: block;
+}
+.none{
+    display: none;
 }

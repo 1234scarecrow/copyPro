@@ -49,3 +49,27 @@ function moveTo(to){
 var timer=setInterval(function(){
     moveTo();
 },2500)
+
+// 动作：两个小项目鼠标经过与离开
+// 1
+var items1=document.getElementsByClassName("items1")[0];
+var div1s=items1.children;
+items1.onmouseover=function(){
+    div1s[1].className="none";
+    div1s[2].className="block";
+}
+items1.onmouseout=function(){
+    div1s[1].className="block";
+    div1s[2].className="none";
+}
+// 2
+var items2=document.getElementsByClassName("items2")[0];
+var div2s=items2.children;
+items2.onmouseover=function(){
+    div2s[1].className="none";
+    div2s[2].className="block";
+}
+items2.onmouseout=function(){
+    div2s[1].className="block";
+    div2s[2].className="none";
+}
