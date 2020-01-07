@@ -55,10 +55,12 @@ var timer=setInterval(function(){
 var items1=document.getElementsByClassName("items1")[0];
 var div1s=items1.children;
 items1.onmouseover=function(){
+    items1.style.marginTop="-3px";
     div1s[1].className="none";
     div1s[2].className="block";
 }
 items1.onmouseout=function(){
+    items1.style.marginTop="0px";
     div1s[1].className="block";
     div1s[2].className="none";
 }
@@ -66,10 +68,27 @@ items1.onmouseout=function(){
 var items2=document.getElementsByClassName("items2")[0];
 var div2s=items2.children;
 items2.onmouseover=function(){
+    items2.style.marginBottom="3px";
     div2s[1].className="none";
     div2s[2].className="block";
 }
 items2.onmouseout=function(){
+    items2.style.marginBottom="0px";
     div2s[1].className="block";
     div2s[2].className="none";
+}
+
+// 关注方式部分元素动作
+// 微信二维码消失显示动作
+var wxCode=document.querySelector("div.attention>div>div:nth-child(3) div")
+console.log(wxCode);
+var wxtarget=wxCode.previousElementSibling.parentElement.parentElement;
+// console.log(wxtarget);
+wxtarget.onmouseover=function(){
+    console.log("in")
+    wxCode.className="high play"
+}
+wxtarget.onmouseout=function(){
+    console.log("out")
+    wxCode.className="low hidden"
 }

@@ -6,6 +6,41 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "107870",
+      "name": "勾",
+      "font_class": "check",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "380399",
+      "name": "weixin",
+      "font_class": "weixin",
+      "unicode": "e680",
+      "unicode_decimal": 59008
+    },
+    {
+      "icon_id": "650753",
+      "name": "感叹号",
+      "font_class": "gantanhao",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "785012",
+      "name": "QQ",
+      "font_class": "qq",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "809705",
+      "name": "weibo",
+      "font_class": "weibo",
+      "unicode": "e696",
+      "unicode_decimal": 59030
+    },
+    {
       "icon_id": "8106224",
       "name": "down",
       "font_class": "down",
@@ -25,6 +60,13 @@
       "font_class": "search",
       "unicode": "e6e1",
       "unicode_decimal": 59105
+    },
+    {
+      "icon_id": "10918080",
+      "name": "bilibili-line",
+      "font_class": "bilibili-line",
+      "unicode": "e75d",
+      "unicode_decimal": 59229
     }
   ]
 }

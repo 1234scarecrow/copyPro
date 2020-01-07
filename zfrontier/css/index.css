@@ -204,6 +204,9 @@ header{
     display: flex;
     justify-content: center;
 }
+.topRightLeft>div:nth-child(2)>a:hover{
+    color: #2eacff;
+}
 .topRightLeft>div:first-child>div{
     width: 50%;
     /* position: absolute;
@@ -298,7 +301,7 @@ header{
     width: 166px;
     height: 220px;
     position: absolute;
-    background-color: rgb(63, 143, 218);
+    /* background-color: rgb(63, 143, 218); */
     bottom: 0px;
     right: 0px;
 }
@@ -310,6 +313,7 @@ header{
     /* opacity: 1; */
     transition: opacity 0.2s ease;
 }
+
 /* 控制二维码显示与隐藏 */
 .play{
     opacity: 1;
@@ -327,7 +331,7 @@ header{
     list-style: none;
     width: 1380px;
     margin-left: 0px;
-    transition: margin-left 0.25s ease;
+    transition: margin-left 0.3s ease;
 }
 .indexCarousel>li{
     float: left;
@@ -365,7 +369,8 @@ header{
 .items1,.items2{
     position: relative;
     margin-top: 0px;
-    transition: margin-top 0.2s ease
+    transition: all 0.2s ease;
+    /* transition: margin-bottom 0.2s ease; */
 }
 /* .items1:hover{
     margin-top: -3px;
@@ -419,8 +424,59 @@ header{
     background-color: #00000033;
     color: #fff;
     padding: 5px;
-    padding-top: 24%;
+    padding-top: 35%;
 }
+.sign{
+    background-image: url("../img/items/3.png");
+    background-size: 166px;
+}
+.sign>div{
+    background-color: #fff;
+    width: 80%;
+    margin: 17% auto;
+    font-size: 13px;
+    box-sizing: border-box;
+    padding-left: 13px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 3px;
+    box-shadow: #ffffff66 0 0 10px ;
+}
+.sign>p{
+    color: #fff;
+    font-size: 13px;
+    padding-left: 15px;
+    padding-bottom: 6px;
+}
+.sign>p>span{
+    font-size: 13px;
+}
+.attention{
+    background: #8A7B47;
+}
+.attention a{
+    text-decoration: none;
+}
+.attention>div>span{
+    display: block;
+    margin-bottom: 15px;
+}
+.attention span{
+    color: #fff;
+    font-size: 15px;
+}
+.attention>div{
+    padding: 15px 20px 0 20px;
+}
+.attention>div>div{
+    height: 30px;
+    line-height: 30px;
+}
+.attention>div>div>span:first-child{
+    display: inline-block;
+    width: 24px;
+}
+.attention
 /* 中间两小项目动作样式 */
 .block{
     display: block;
@@ -428,3 +484,30 @@ header{
 .none{
     display: none;
 }
+/* 微信二维码 */
+.attention>div>div:nth-child(3){
+    /* background-color: aqua; */
+    position: relative;
+}
+.attention>div>div:nth-child(3) div{
+    position: absolute;
+    top: 30px;
+    left: 10%;
+    height: 95px;
+    width: 95px;
+    border-radius: 3px;
+    box-shadow: #00000066 0 0 10px;
+    overflow: hidden;
+    /* opacity: 1; */
+    transition: all .15s ease;
+}
+.attention img{
+    width: 95px;
+}
+.high{
+    height: 95px !important;
+}
+.low{
+    height: 0px !important;
+}
+
